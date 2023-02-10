@@ -3,6 +3,7 @@
 
 ### First Task ###
 -------------------------
+<a href="Practic_Api_1/Practic_Api_1/Controllers/WeatherForecastController.cs">First Work With API</a>
 1) Добовляем метод с добавлением новой записи
 <br> </br>
 ![image](https://user-images.githubusercontent.com/121193436/218036922-e581614e-f0b8-4dd5-94ea-a4e3e352123a.png)
