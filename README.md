@@ -53,6 +53,7 @@
 ![image](https://user-images.githubusercontent.com/121193436/218049780-b75cf9c8-1e10-41ea-a545-2160d215ee53.png)
 
 7) Проверяем все
+<br></br>
 Метод Get - success
 <br></br>
 ![image](https://user-images.githubusercontent.com/121193436/218050126-199c4bf0-d2a5-4250-80cc-780a00ce1ce6.png)
@@ -62,15 +63,19 @@
 ![image](https://user-images.githubusercontent.com/121193436/218050382-2f33f445-219d-434a-81aa-a9889ddf59ae.png) ![image](https://user-images.githubusercontent.com/121193436/218050418-9aec3fa6-893b-42de-9993-61896deb2174.png)
 <br></br>
 Метод Update - success
+<br></br>
 ![image](https://user-images.githubusercontent.com/121193436/218050717-f6853ff1-de3e-43c6-9a97-ef2cdf40b9e5.png) ![image](https://user-images.githubusercontent.com/121193436/218050745-4731eade-2ec2-4023-a9eb-6dca928d19eb.png)
 <br></br>
 Метод Delete - success
+<br></br>
 ![image](https://user-images.githubusercontent.com/121193436/218050958-873a3e84-3f2b-4a86-a952-3d3fea6f81ce.png) ![image](https://user-images.githubusercontent.com/121193436/218051018-2d3b73ff-a4c5-4f8f-88ae-47d1b7a105a5.png)
 <br></br>
 Метод GetName - success
+<br></br>
 ![image](https://user-images.githubusercontent.com/121193436/218051199-392b2244-d3c7-4089-869c-8fb007a4d431.png)
 <br></br>
 Метод GetByCity - success
+<br></br>
 ![image](https://user-images.githubusercontent.com/121193436/218051482-976c0979-2445-4ca8-91cc-9a76eceb912e.png)
 
 
