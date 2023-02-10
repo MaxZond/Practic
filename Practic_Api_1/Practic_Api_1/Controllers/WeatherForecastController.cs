@@ -1,7 +1,16 @@
 using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace Practic_Api_1.Controllers
 {
+    public class WeatherData
+    {
+        public int Id { get; set; }
+        public string Date { get; set; }
+        public int Degree { get; set; }
+        public string Location { get; set; }
+    }
+
     [ApiController]
     [Route("[controller]")]
     public class WeatherForecastController : ControllerBase
@@ -11,6 +20,14 @@ namespace Practic_Api_1.Controllers
         "Freezing", "Bracing", "Chilly", "Cool", "Mild", "Warm", "Balmy", "Hot", "Sweltering", "Scorching"
         };
 
+        public static List<WeatherData> weatherDatas = new()
+        {
+            new WeatherData() { Id = 1, Date = "06.01.2004", Degree = 22, Location="LA" },
+            new WeatherData() { Id = 2, Date = "11.06.2022", Degree = -22, Location = "Arctic" },
+            new WeatherData() { Id = 3, Date = "22.12.2020", Degree = -4, Location = "NY" }
+        };
+
+
         private readonly ILogger<WeatherForecastController> _logger;
 
         public WeatherForecastController(ILogger<WeatherForecastController> logger)
@@ -19,60 +36,91 @@ namespace Practic_Api_1.Controllers
         }
 
         [HttpGet]
-        public List<string> Get()
+        public List<WeatherData> Get()
         {
-            return Summaries;
+            return weatherDatas;
         }
 
         [HttpPost]
-        public IActionResult Add(string name)
+        public IActionResult Add(WeatherData data)
         {
-            if (name == null)
+            if (data == null)
             { 
                 return BadRequest("Null name"); 
             }
 
-            Summaries.Add(name);        
+            for(int i = 0; i < weatherDatas.Count; i++)
+            {
+                if (weatherDatas[i].Id == data.Id)
+                {
+                    return BadRequest("Id already exists");
+                }
+            }
+            weatherDatas.Add(data);
             return Ok();
         }
 
         [HttpPut]
-        public IActionResult Update(int index, string name) 
+        public IActionResult Update(WeatherData data) 
         {
-            if(index < 0 || index >= Summaries.Count)
+            for (int i = 0; i < weatherDatas.Count; i++)
             {
-                return BadRequest("Bad index");
-            }
-            if (name == null)
-            {
-                return BadRequest("Null name");
+                if (weatherDatas[i].Id == data.Id)
+                {
+                    weatherDatas[i] = data;
+                    return Ok();
+                }
             }
 
-            Summaries[index] = name;
-            return Ok();
+            return BadRequest("Id not found");
         }
 
         [HttpDelete]
-        public IActionResult Delete(int index)
+        public IActionResult Delete(int id)
         {
-            if (index < 0 || index >= Summaries.Count)
+            for (int i = 0; i < weatherDatas.Count; i++)
+            {
+                if (weatherDatas[i].Id == id)
+                {
+                    weatherDatas.RemoveAt(i);
+                    return Ok();
+                }
+            }
+
+            return BadRequest("Id not found");
+        }
+
+        [HttpGet("{id}")]
+        public IActionResult GetName(int id)
+        {
+            if (id < 0 || id >= Summaries.Count)
             {
                 return BadRequest("Bad index");
             }
 
-            Summaries.RemoveAt(index);
-            return Ok();
-        }
-
-        [HttpGet("{index}")]
-        public string GetName(int index)
-        {
-            if (index < 0 || index >= Summaries.Count)
+            for (int i = 0; i < weatherDatas.Count; i++)
             {
-                return "Bad index";
+                if (weatherDatas[i].Id == id)
+                {
+                    return Ok(weatherDatas[i]);
+                }
             }
 
-            return Summaries[index];
+            return BadRequest("Item not found!");
+        }
+
+        [HttpGet("find-by-city")]
+        public IActionResult GetByCity(string location) 
+        {
+            for (int i = 0; i < weatherDatas.Count; i++)
+            {
+                if (weatherDatas[i].Location == location)
+                {
+                    return Ok("Item found!");
+                }
+            }
+
+            return BadRequest("Item not found!");    
         }
     }
 }
