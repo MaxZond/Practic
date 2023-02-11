@@ -94,4 +94,6 @@ d. При всех остальных значениях вернуть ошиб
 <br></br>
 ![image](https://user-images.githubusercontent.com/121193436/218051482-976c0979-2445-4ca8-91cc-9a76eceb912e.png)
 
-
+<p align="center">
+<img src="https://thumbs.gfycat.com/IndolentAntiqueHoneybee-max-1mb.gif" height="150"/></h1>   
+</p>
