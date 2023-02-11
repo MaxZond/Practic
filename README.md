@@ -1,9 +1,9 @@
-# Practic
+# Practic Perepelkin <img src="https://userpic.fishki.net/2020/07/04/195513/04067adba4096f796b5d0e4dadc2fecd.gif" height="50"/></h1>   
 [![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=All+my+practice+works)](https://git.io/typing-svg)
 ###### Day 1 ######
 ### First Task ###
 -------------------------
-<a href="Practic_Api_1/Practic_Api_1/Controllers/WeatherForecastController.cs">First Work With API</a>
+<a href="Practic%20Api%201_1/WebAPI1/Controllers/WeatherForecastController.cs">First Work With API</a>
 1) Добовляем метод с добавлением новой записи
 <br> </br>
 ![image](https://user-images.githubusercontent.com/121193436/218036922-e581614e-f0b8-4dd5-94ea-a4e3e352123a.png)
@@ -22,6 +22,7 @@
 
 ### Конечный результат первого задания ###
 ![image](https://user-images.githubusercontent.com/121193436/218038139-6d051ad0-968e-46f8-8294-ee2bfd4f9115.png)
+
 
 ### Second Task ###
 -------------------------
