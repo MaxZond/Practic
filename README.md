@@ -1,5 +1,5 @@
 # Practic Perepelkin <img src="https://userpic.fishki.net/2020/07/04/195513/04067adba4096f796b5d0e4dadc2fecd.gif" height="50"/></h1>   
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=All+my+practice+works)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?color=%2336BCF7&lines=All+my+practice+works)](https://i.gifer.com/BulL.gif)
 ###### Day 1 ######
 ### First Task ###
 -------------------------
@@ -20,8 +20,23 @@
 <br> </br>
 ![image](https://user-images.githubusercontent.com/121193436/218038016-d6f8d3e0-a977-40f1-90c0-c0e2fff80873.png)
 
+5) Метод подсчета записей c определенной погодой
+<br> </br>
+![image](https://user-images.githubusercontent.com/121193436/218255586-649f11d6-5e71-4b11-a7d8-d878a7688d65.png)
+
+6) Метод метода получения всех записей, который вернёт отсортированный список.    
+Работа метода должна быть следующая:    
+a. Если значение параметра null - верните список таким, какой он есть.    
+b. Если значение параметра 1 - верните отсортированный список по возрастанию.    
+c. Если значение параметра -1 - верните отсортированный список по убыванию.    
+d. При всех остальных значениях вернуть ошибку (BadRequest) сообщением “Некорректное значение параметра sortStrategy”    
+![image](https://user-images.githubusercontent.com/121193436/218255683-9e597fbd-daa0-4c8d-824a-bf377de91ac5.png)
+
+
 ### Конечный результат первого задания ###
-![image](https://user-images.githubusercontent.com/121193436/218038139-6d051ad0-968e-46f8-8294-ee2bfd4f9115.png)
+#### 7 методов для работы со списком ####
+![image](https://user-images.githubusercontent.com/121193436/218255388-806b8cd1-f3a1-40d2-ab79-8b43d6da2093.png)
+
 
 
 ### Second Task ###
